@@ -1,8 +1,8 @@
 import { DataSource } from "typeorm"
 import config from "../../config/config"
 import Skincare from "../model/skincare.model"
-import SkincareBrand from "../model/skincareBrand.model"
-import SkincareType from "../model/skincareType.model"
+import SkincareBrand from "../model/skincare.brand.model"
+import SkincareType from "../model/skincare.type.model"
 
 const PostgreDB = new DataSource({
     type: "postgres",
@@ -13,7 +13,9 @@ const PostgreDB = new DataSource({
     database: config.database,
     synchronize: true,
     logging: false,
-    entities: [],
+    entities: [Skincare, SkincareBrand, SkincareType],
+    migrations: [],
+    subscribers: [],
 })
 
 export default PostgreDB

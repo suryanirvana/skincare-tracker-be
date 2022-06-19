@@ -7,7 +7,7 @@ function connect() {
             log.info("Database connected")
         })
         .catch((error) => {
-            log.error("Failed to connect to database", error)
+            log.error(`Failed to connect to database ${error.errors}`)
             process.exit(1)
         })
 }

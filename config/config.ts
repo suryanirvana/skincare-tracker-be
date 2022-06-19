@@ -5,5 +5,8 @@ export default {
     database: "skincare-db",
     dbUsername: "skincare-admin",
     dbPassword: "skincare-admin123",
-    healtcheck: "/healthcheck"
+    healtcheck: "/healthcheck",
+    skincare: "/skincare",
+    skincareType: "/skincare/type",
+    skincareBrand: "/skincare/brand",
 }
