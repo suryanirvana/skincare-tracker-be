@@ -34,7 +34,7 @@ export async function upsertSkincare(req: Request) {
         skincare.skincareBrandID = skincareBrand
         skincare.skincareTypeID = skincareType
         
-        // await skincareRepository.save(skincare)
+        await skincareRepository.save(skincare)
 
         log.info("Successfully upsert skincare data")
         return skincare
