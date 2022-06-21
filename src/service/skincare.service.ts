@@ -77,10 +77,14 @@ export async function readSkincare(req: Request) {
             }
         }
 
-        var skincareListFinalResult: { [id: string] : Skincare } = {}
+        var skincareListFinalResult: { [id: number] : Skincare } = {}
         Object.entries(skincareListDictionary).forEach(
-            ([key, value]) => {
+            ([_, value]) => {
                 const skincare = value[Math.floor(Math.random() * value.length)]
+                let key = skincare['skincareTypeID']['step'] as number
+                if(key in skincareListFinalResult) {
+                    key++
+                }
                 skincareListFinalResult[key] = skincare
             }
         );

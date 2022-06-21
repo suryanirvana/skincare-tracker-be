@@ -63,4 +63,9 @@ export default function(app: Express) {
         validateRequest(deleteSkincareRequest), 
         deleteSkincareHandler
     )
+
+    app.post("/post", (req, res) => {
+        console.log("Connected to React");
+        res.redirect("/");
+      });
 }

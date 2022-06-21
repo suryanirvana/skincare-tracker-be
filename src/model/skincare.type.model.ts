@@ -16,6 +16,9 @@ class SkincareType {
     @Column()
     night: boolean
 
+    @Column({nullable: true})
+    step: number
+
     @CreateDateColumn()
     createdAt: Date;
         

@@ -1,5 +1,5 @@
 export default {
-    port: 3000,
+    port: 8000,
     host: "localhost",
     dbPort: 5432,
     database: "skincare-db",
