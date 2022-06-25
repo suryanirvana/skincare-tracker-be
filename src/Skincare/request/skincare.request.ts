@@ -1,4 +1,4 @@
-import { object, string, boolean, number, date } from "yup"
+import { object, string, number } from "yup"
 
 const upsertPayload = {
     body: object({

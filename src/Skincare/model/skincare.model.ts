@@ -1,8 +1,8 @@
 
 import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, UpdateDateColumn, PrimaryGeneratedColumn } from 'typeorm';
 
-import SkincareBrand from "./skincare.brand.model";
-import SkincareType from "./skincare.type.model";
+import SkincareBrand from "../../SkincareBrand/model/skincare.brand.model";
+import SkincareType from '../../SkincareType/model/skincare.type.model';
 
 @Entity()
 class Skincare {

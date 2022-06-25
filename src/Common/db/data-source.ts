@@ -1,8 +1,8 @@
 import { DataSource } from "typeorm"
-import config from "../../config/config"
-import Skincare from "../model/skincare.model"
-import SkincareBrand from "../model/skincare.brand.model"
-import SkincareType from "../model/skincare.type.model"
+import config from "../config/config"
+import Skincare from "../../Skincare/model/skincare.model"
+import SkincareBrand from "../../SkincareBrand/model/skincare.brand.model"
+import SkincareType from "../../SkincareType/model/skincare.type.model"
 
 const PostgreDB = new DataSource({
     type: "postgres",

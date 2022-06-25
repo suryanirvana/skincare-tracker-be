@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 
-import config from '../../config/config';
-import log from '../logger';
+import config from '../../Common/config/config';
+import log from '../../Common/logger';
 
-import { success, error } from '../response/response';
+import { success, error } from '../../Common/response/response';
 import { readSkincareBrand } from '../service/service.brand.service';
 
 export async function readSkincareBrandHandler(req: Request, res: Response) {

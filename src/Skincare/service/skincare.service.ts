@@ -1,10 +1,11 @@
-import log from '../logger';
-import PostgreDB from '../db/data-source';
+import { Request } from 'express';
+
+import log from '../../Common/logger';
+import PostgreDB from '../../Common/db/data-source';
 
 import Skincare from '../model/skincare.model';
-import SkincareBrand from '../model/skincare.brand.model';
-import SkincareType from '../model/skincare.type.model';
-import { Request } from 'express';
+import SkincareBrand from '../../SkincareBrand/model/skincare.brand.model';
+import SkincareType from '../../SkincareType/model/skincare.type.model';
 
 const skincareRepository = PostgreDB.getRepository(Skincare)
 const skincareBrandRepository = PostgreDB.getRepository(SkincareBrand)

@@ -1,22 +1,22 @@
 import { Express, Request, Response } from "express"
 
-import config from "../config/config"
-import log from "./logger"
-import validateRequest from "./middleware/validateRequest"
-import { success } from "./response/response"
+import config from "./Common/config/config"
+import log from "./Common/logger"
+import validateRequest from "./Common/middleware/validateRequest"
+import { success } from "./Common/response/response"
 
 import { 
     upsertSkincareHandler,
     readSkincareHandler,
     deleteSkincareHandler
-} from "./controller/skincare.controller"
+} from "./Skincare/controller/skincare.controller"
 import { 
     upsertSkincareRequest,
     readSkincareRequest,
     deleteSkincareRequest
-} from "./request/skincare.request"
-import { readSkincareTypeHandler } from "./controller/skincare.type.controller"
-import { readSkincareBrandHandler } from "./controller/skincare.brand.controller"
+} from "./Skincare/request/skincare.request"
+import { readSkincareTypeHandler } from "./SkincareType/controller/skincare.type.controller"
+import { readSkincareBrandHandler } from "./SkincareBrand/controller/skincare.brand.controller"
 
 export default function(app: Express) {
 

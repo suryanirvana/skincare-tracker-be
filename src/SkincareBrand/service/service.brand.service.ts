@@ -1,5 +1,5 @@
-import log from "../logger";
-import PostgreDB from "../db/data-source"
+import log from "../../Common/logger";
+import PostgreDB from "../../Common/db/data-source"
 
 import SkincareBrand from '../model/skincare.brand.model';
 

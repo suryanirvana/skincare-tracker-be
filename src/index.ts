@@ -1,9 +1,9 @@
 import express from "express"
 import "reflect-metadata"
 
-import config from "../config/config";
-import connect from "./db/connect";
-import log from "./logger";
+import config from "./Common/config/config";
+import connect from "./Common/db/connect";
+import log from "./Common/logger";
 import routes from "./routes";
 
 const port = config.port as number
