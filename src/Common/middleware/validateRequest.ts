@@ -3,7 +3,6 @@ import { AnySchema } from "yup"
 import log from "../logger"
 import { badRequest } from "../response/response"
 
-
 const validate = (schema: AnySchema) => async (
     req: Request,
     res: Response,
